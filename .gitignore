@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Environment files (may contain secrets)
+.env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local-only files
+*.local
+.claude/settings.local.json
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# TI calculator ROM dumps and calculator files are copyrighted and must
+# never be committed. Users supply their own ROM, dumped from a calculator
+# they own (see README.md).
+/public/ROM/
+/ROM/
+*.rom
+*.ROM
+*.Rom
+*.85u
+*.85U
+*.86u
+*.8xu
+*.73u
+*.tib
+*.sav
+*.85b
+*.85g
+*.85p
+*.85s
+*.85v
+*.85k
+*.85l
+*.85n

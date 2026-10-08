@@ -1,0 +1,13 @@
+services:
+  ti85:
+    build: .
+    ports:
+      - '8080:80'
+    environment:
+      # Set exactly one of these to have the ROM provisioned automatically
+      # on container start. Leave both unset and the app falls back to its
+      # in-browser "upload your ROM" file picker instead -- see README.md.
+      ROM_URL: ''
+      # ROM_PATH: /rom/TI85.ROM
+    # volumes:
+    #   - /path/to/your/TI85.ROM:/rom/TI85.ROM:ro

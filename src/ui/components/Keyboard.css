@@ -1,0 +1,146 @@
+/*
+ * Tielm.js - a browser-based TI-85 emulator
+ * Copyright (C) 2026 the Tielm.js contributors
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+  user-select: none;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.key {
+  min-width: 40px;
+  padding: 6px 4px;
+  font-size: 0.75rem;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background: #e8e8e8;
+  cursor: pointer;
+  touch-action: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+}
+
+.key:active {
+  background: #c0c0c0;
+}
+
+.key-spacer {
+  min-width: 40px;
+}
+
+.key-legends {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5rem;
+  line-height: 1;
+}
+
+.key-secondary {
+  color: #b45f06;
+}
+
+.key-alpha {
+  color: #1155cc;
+}
+
+.key-main {
+  font-weight: 600;
+}
+
+.keyboard-row--function {
+  margin-bottom: 8px;
+}
+
+.key--function {
+  min-width: 32px;
+  padding: 4px 2px;
+  font-size: 0.65rem;
+  background: #d8d8d8;
+  color: #555;
+}
+
+.key--2nd {
+  background: #e8a33d;
+  border-color: #b45f06;
+}
+
+.key--2nd:active {
+  background: #c98523;
+}
+
+.key--alpha {
+  background: #6fa8dc;
+  border-color: #1155cc;
+}
+
+.key--alpha:active {
+  background: #4c8fce;
+}
+
+.keyboard-row--nav {
+  gap: 16px;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-left-row {
+  display: flex;
+  gap: 4px;
+}
+
+.nav-diamond {
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.nav-diamond-up {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.nav-diamond-left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.nav-diamond-right {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.nav-diamond-down {
+  grid-column: 2;
+  grid-row: 3;
+}

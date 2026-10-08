@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+docs
+tests
+tilem
+public/ROM
+ROM
+*.rom
+*.85u
+.claude
